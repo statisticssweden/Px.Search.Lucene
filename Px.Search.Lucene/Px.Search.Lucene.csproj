@@ -2,9 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageId>Px.Search.Lucene</PackageId>
+	  <MinVerTagPrefix>v</MinVerTagPrefix>
+	  <MinVerDefaultPreReleasePhase>beta</MinVerDefaultPreReleasePhase>
+	  <MinVerSkip Condition="'$(Configuration)' == 'Debug'">true</MinVerSkip>
+	  <SignAssembly>false</SignAssembly>
+	  <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Description>Search implementation for Lucene in .net standard</Description>
+	  <PackageProjectUrl>https://github.com/statisticssweden/Px.Search.Abstractions</PackageProjectUrl>
+	  <PackageIcon></PackageIcon>
+	  <PackageIconUrl />
+	  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="MinVer" Version="4.2.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
     <PackageReference Include="Lucene.Net" Version="4.8.0-beta00016" />
     <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00016" />
     <PackageReference Include="Lucene.Net.QueryParser" Version="4.8.0-beta00016" />
