@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PX.LuceneProvider48", "Px.Search.Lucene\PX.LuceneProvider48.csproj", "{B843A49F-9F63-408B-9D13-FF6D461DFAD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B843A49F-9F63-408B-9D13-FF6D461DFAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B843A49F-9F63-408B-9D13-FF6D461DFAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B843A49F-9F63-408B-9D13-FF6D461DFAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B843A49F-9F63-408B-9D13-FF6D461DFAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00E3B78E-6240-4C5E-89A9-B6D61A355043}
+	EndGlobalSection
+EndGlobal
