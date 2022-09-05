@@ -1,18 +1,14 @@
 ﻿using PCAxis.Paxiom;
-using PX.SearchAbstractions;
+using PX.Search.Abstractions;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Lucene.Net.Store;
 using Lucene.Net.Index;
-using PCAxis.Menu;
+using Lucene.Net.Util;
 using Lucene.Net.Documents;
-using PCAxis.Web.Core.Enums;
 using PCAxis.Paxiom.Extensions;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Analysis;
-using Lucene.Net.Analysis.Miscellaneous;
 
 namespace Px.Search.Lucene
 {
@@ -125,12 +121,11 @@ namespace Px.Search.Lucene
         private IndexWriter CreateIndexWriter()
         {
             FSDirectory fsDir = FSDirectory.Open(_indexDirectory);
-
             if (IndexWriter.IsLocked(fsDir))
             {
                 return null;
             }
-            Lucene.Net.Util.LuceneVersion luceneVersion = Lucene.Net.Util.LuceneVersion.LUCENE_48;
+            LuceneVersion luceneVersion = LuceneVersion.LUCENE_48;
 
             Analyzer analyzer = new StandardAnalyzer(luceneVersion);
 

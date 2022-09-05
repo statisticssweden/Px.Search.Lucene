@@ -1,9 +1,6 @@
-﻿using PX.SearchAbstractions;
+﻿using PX.Search.Abstractions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Lucene.Net.Store;
 using Lucene.Net.Search;
 using Lucene.Net.QueryParsers.Classic;
@@ -11,6 +8,7 @@ using Lucene.Net.Documents;
 using Lucene.Net.Analysis.Standard;
 using PCAxis.Paxiom.Extensions;
 using Lucene.Net.Index;
+using Lucene.Net.Util;
 
 namespace Px.Search.Lucene
 {
@@ -53,7 +51,7 @@ namespace Px.Search.Lucene
 
             List<SearchResultItem> searchResult = new List<SearchResultItem>();
             string[] fields = GetSearchFields(filter);
-            Lucene.Net.Util.LuceneVersion luceneVersion = Lucene.Net.Util.LuceneVersion.LUCENE_48;
+            LuceneVersion luceneVersion = LuceneVersion.LUCENE_48;
 
             QueryParser qp = new MultiFieldQueryParser(luceneVersion,
                                                        fields,

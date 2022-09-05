@@ -1,6 +1,5 @@
-﻿using PX.SearchAbstractions;
+﻿using PX.Search.Abstractions;
 using System.IO;
-using System.Web;
 using System.Text;
 
 namespace Px.Search.Lucene
