@@ -1,5 +1,5 @@
 ﻿using PCAxis.Paxiom;
-using PX.Search.Abstractions;
+using Px.Search.Abstractions;
 using System;
 using System.Linq;
 using Lucene.Net.Store;

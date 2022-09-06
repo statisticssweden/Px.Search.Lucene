@@ -1,4 +1,4 @@
-﻿using PX.Search.Abstractions;
+﻿using Px.Search.Abstractions;
 using System;
 using System.Collections.Generic;
 using Lucene.Net.Store;
